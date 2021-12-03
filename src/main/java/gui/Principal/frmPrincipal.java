@@ -20,7 +20,7 @@ public class frmPrincipal extends JFrame{
     private JButton btnEmpleado;
     private JButton btnAeronave;
     private JButton btnVehiculoAerportuario;
-    private JButton registrarBoletoButton;
+    private JButton btnBoleto;
     private JButton button7;
     private JButton button8;
     private JPanel jpaImagen;
@@ -64,7 +64,7 @@ public class frmPrincipal extends JFrame{
                 frame.setVisible(true);
             }
         });
-        registrarBoletoButton.addActionListener(new ActionListener() {
+        btnBoleto.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frmBoleto frame = new frmBoleto();
@@ -79,10 +79,24 @@ public class frmPrincipal extends JFrame{
         setResizable(false);
         pack();
         setLocationRelativeTo(null);
-
-        /*ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/loginPrincipal/iconoLogin.png");
-        setIconImage(imagen.getImage());*/
-         //-----------------------------------------------------------------------------------
+        //Icono Ventana
+        ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/loginPrincipal/iconoPrincipal.png");
+        setIconImage(imagen.getImage());
+        //Imagen
+        lblImagen.setIcon(new ImageIcon("src/main/java/Recursos/imagenes/loginPrincipal/principal.png"));
+        //Botones
+        //boton persona
+        btnPersona.setIcon(new ImageIcon("src/main/java/Recursos/imagenes/ClienteEmpleado/iconoLeerCBOPersonas.png"));
+        //boton pasajero
+        btnPasajeros.setIcon(new ImageIcon("src/main/java/Recursos/imagenes/ClienteEmpleado/iconoRegistrarPersonas.png"));
+        //boton empleado
+        btnEmpleado.setIcon(new ImageIcon("src/main/java/Recursos/imagenes/ClienteEmpleado/iconoActualizarPersonas.png"));
+        //boton aeronave
+        btnAeronave.setIcon((new ImageIcon("src/main/java/Recursos/imagenes/AVB/iconoAvion.png")));
+        //boton vehiculo
+        btnVehiculoAerportuario.setIcon(new ImageIcon("src/main/java/Recursos/imagenes/AVB/iconoVehiculo32.png"));
+        //boton boleto
+        btnBoleto.setIcon(new ImageIcon("src/main/java/Recursos/imagenes/AVB/iconoTicket32.png"));
     }
 
 

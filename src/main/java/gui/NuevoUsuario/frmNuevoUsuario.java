@@ -42,8 +42,11 @@ public class frmNuevoUsuario extends JFrame{
         pack();
         setLocationRelativeTo(null);
 
-        /*ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/loginPrincipal/iconoLogin.png");
-        setIconImage(imagen.getImage());*/
+        //Icono Ventana
+        ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/loginPrincipal/iconoLogin.png");
+        setIconImage(imagen.getImage());
+        //Imagen
+        lblImagen.setIcon(new ImageIcon("src/main/java/recursos/imagenes/loginPrincipal/usuario.png"));
         //-----------------------------------------------------------------------------------
     }
 }

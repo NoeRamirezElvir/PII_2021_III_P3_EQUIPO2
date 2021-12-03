@@ -50,8 +50,27 @@ public class frmPersona extends JFrame{
         pack();
         setLocationRelativeTo(null);
 
-        /*ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/loginPrincipal/iconoLogin.png");
-        setIconImage(imagen.getImage());*/
+        //Icono Ventana
+        ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoActualizarPersonas.png");
+        setIconImage(imagen.getImage());
+        //Imagenes
+        lblImagen1.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/imagenPersona2.png"));
+        lblImagen2.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/imagenPersona.png"));
+        //Botones
+        //boton registrar
+        btnRegistrar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoRegistrarPersonas.png"));
+        //boton actualizar
+        btnActualizar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoActualizarPersonas.png"));
+        //boton eliminar
+        btnEliminar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoEliminarPersonas.png"));
+        //boton buscar
+        btnBuscar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoBuscarPersonas.png"));
+        //boton listar
+        btnListar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoListar.png"));
+        //boton leerCBO
+        btnLeerCBO.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoLeerCBOPersonas.png"));
+        //boton limpiar
+        btnLimpiar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoLimpiarPersonas.png"));
         //-----------------------------------------------------------------------------------
         modelo = (DefaultTableModel) tblDatos.getModel();
         modelo.addColumn("ID");

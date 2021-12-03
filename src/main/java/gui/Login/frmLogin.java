@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class frmLogin {
+public class frmLogin extends JFrame{
     private JPanel jpaPrincipal;
     private JPanel jpaTitulo;
     private JLabel lblTitulo;
@@ -24,6 +24,14 @@ public class frmLogin {
 
 
     public frmLogin() {
+        //Imagen
+        ImageIcon imagen = new ImageIcon("src/main/java/Recursos/imagenes/loginPrincipal/login.png");
+        lblImagen.setIcon(imagen);
+        //Botones
+        //boton aceptar
+        btnAceptar.setIcon(new ImageIcon("src/main/java/Recursos/imagenes/loginPrincipal/iconoLlaveLogin.png"));
+        btnCrear.setIcon(new ImageIcon("src/main/java/Recursos/imagenes/loginPrincipal/iconoMasLogin.png"));
+
         btnAceptar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -42,12 +50,17 @@ public class frmLogin {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("frmLogin");
+        JFrame frame = new JFrame("Log In");
         frame.setContentPane(new frmLogin().jpaPrincipal);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
+        //Icono Ventana
+        ImageIcon imagen = new ImageIcon("src/main/java/Recursos/imagenes/loginPrincipal/iconoLogin.png");
+        frame.setIconImage(imagen.getImage());
+
     }
 }

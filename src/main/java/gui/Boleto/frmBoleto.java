@@ -51,8 +51,27 @@ public class frmBoleto extends JFrame{
         pack();
         setLocationRelativeTo(null);
 
-        /*ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/loginPrincipal/iconoLogin.png");
-        setIconImage(imagen.getImage());*/
+        //Icono ventana
+        ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/AVB/iconoTicket.png");
+        setIconImage(imagen.getImage());
+        //Imagenes
+        lblImagen1.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/imagenTicketBoleto.png"));
+        lblImagen2.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/imagenMaletaBoleto.png"));
+        //Botones
+        //boton registrar
+        btnRegistrar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/iconoRegistrar.png"));
+        //boton actualizar
+        btnActualizar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/iconoActualizar.png"));
+        //boton eliminar
+        btnEliminar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/iconoEliminar.png"));
+        //boton buscar
+        btnBuscar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/iconoBuscar.png"));
+        //boton listar
+        btnListar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/iconoListar.png"));
+        //boton leerCBO
+        btnLeerCBO.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/iconoLeerCBO.png"));
+        //boton limpiar
+        btnLimpiar.setIcon(new ImageIcon("src/main/java/recursos/imagenes/AVB/iconoLimpiarAVB.png"));
         //-----------------------------------------------------------------------------------
         modelo = (DefaultTableModel) tblDatos.getModel();
         modelo.addColumn("ID");
