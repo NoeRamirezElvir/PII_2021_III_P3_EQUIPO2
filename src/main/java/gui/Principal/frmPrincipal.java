@@ -6,6 +6,7 @@ import gui.Empleado.frmEmpleado;
 import gui.Aeronave.frmAeronave;
 import gui.VehiculoAeroportuario.frmVehiculoAeroportuario;
 import gui.Boleto.frmBoleto;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -68,6 +69,13 @@ public class frmPrincipal extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 frmBoleto frame = new frmBoleto();
+                frame.setVisible(true);
+            }
+        });
+        button7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frmMenuPrincipal frame = new frmMenuPrincipal();
                 frame.setVisible(true);
             }
         });
