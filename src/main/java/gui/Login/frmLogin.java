@@ -1,6 +1,6 @@
 package gui.Login;
 
-import gui.Principal.frmPrincipal;
+import gui.Principal.frmMenuPrincipal;
 import gui.NuevoUsuario.frmNuevoUsuario;
 
 import javax.swing.*;
@@ -35,7 +35,7 @@ public class frmLogin extends JFrame{
         btnAceptar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frmPrincipal frame = new frmPrincipal();
+                frmMenuPrincipal frame = new frmMenuPrincipal();
                 frame.setVisible(true);
 
             }
@@ -43,8 +43,8 @@ public class frmLogin extends JFrame{
         btnCrear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frmNuevoUsuario frame = new frmNuevoUsuario();
-                frame.setVisible(true);
+              new frmNuevoUsuario();
+
             }
         });
     }
