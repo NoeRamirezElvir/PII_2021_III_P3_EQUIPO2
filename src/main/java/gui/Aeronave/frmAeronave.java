@@ -10,7 +10,7 @@ public class frmAeronave extends JFrame{
     private JLabel lblTitulo;
     private JLabel lblID;
     private JLabel lblModelo;
-    private JLabel lblDescripcion;
+    private JLabel lblFabricante;
     private JLabel lblAerolinea;
     private JLabel lblTamaño;
     private JLabel lblCapacidad;
@@ -18,7 +18,7 @@ public class frmAeronave extends JFrame{
     private JLabel lblAeronaves;
     private JTextField txtID;
     private JTextField txtModelo;
-    private JTextField txtDescripcion;
+    private JTextField txtFabricante;
     private JComboBox comboBox1;
     private JTextField txtTamaño;
     private JTextField txtCapacidad;
