@@ -2,16 +2,17 @@ package model;
 
 import java.util.Date;
 
-public class Empleado extends Persona{
+public class Empleado{
     private long id;
-    private long codigo;
+    private String codigo;
     private String nombre;
-    private String correoElecrtonico;
+    private String correoElectronico;
     private String departamento;
     private double sueldo;
-    private Date fechaIngreso;
-    private String Cargo;
+    private String fechaIngreso;
+    private String cargo;
     private String horario;
+
 
     public Empleado(){
         super();
@@ -25,11 +26,11 @@ public class Empleado extends Persona{
         this.id = id;
     }
 
-    public long getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(long codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
@@ -41,12 +42,12 @@ public class Empleado extends Persona{
         this.nombre = nombre;
     }
 
-    public String getCorreoElecrtonico() {
-        return correoElecrtonico;
+    public String getCorreoElectronico() {
+        return correoElectronico;
     }
 
-    public void setCorreoElecrtonico(String correoElecrtonico) {
-        this.correoElecrtonico = correoElecrtonico;
+    public void setCorreoElectronico(String correoElectronico) {
+        this.correoElectronico = correoElectronico;
     }
 
     public String getDepartamento() {
@@ -65,20 +66,20 @@ public class Empleado extends Persona{
         this.sueldo = sueldo;
     }
 
-    public Date getFechaIngreso() {
+    public String getFechaIngreso() {
         return fechaIngreso;
     }
 
-    public void setFechaIngreso(Date fechaIngreso) {
+    public void setFechaIngreso(String fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 
     public String getCargo() {
-        return Cargo;
+        return cargo;
     }
 
     public void setCargo(String cargo) {
-        Cargo = cargo;
+        this.cargo = cargo;
     }
 
     public String getHorario() {

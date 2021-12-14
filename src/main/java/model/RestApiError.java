@@ -3,7 +3,7 @@ package model;
 public class RestApiError {
     public String httpStatus;
     public String errorMessage;
-    public String ErrorDetails;
+    public String errorDetails;
     public RestApiError(){
         super();
     }
@@ -23,9 +23,9 @@ public class RestApiError {
         this.errorMessage = errorMessage;
     }
     public String getErrorDetails() {
-        return ErrorDetails;
+        return errorDetails;
     }
     public void setErrorDetails(String errorDetails) {
-        this.ErrorDetails = errorDetails;
+        this.errorDetails = errorDetails;
     }
 }

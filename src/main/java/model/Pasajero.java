@@ -1,6 +1,6 @@
 package model;
 
-public class Pasajero extends Persona{
+public class Pasajero {
     private long id;
     private String codigo;
     private String categoria;
