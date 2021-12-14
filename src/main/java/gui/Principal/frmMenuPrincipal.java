@@ -223,5 +223,11 @@ public class frmMenuPrincipal extends JFrame{
                 frame.setVisible(true);
             }
         });
+        btnSalir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
     }
 }

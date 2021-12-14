@@ -8,7 +8,7 @@ public class Aerolinea {
     private String direccion;
     private String paginaWeb;
     private String ubicacionAeropuerto;
-    private String Nombre;
+    private String nombre;
 
     public Aerolinea(){
         super();
@@ -71,10 +71,10 @@ public class Aerolinea {
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        this.nombre = nombre;
     }
 }
