@@ -7,10 +7,10 @@ public class Equipaje {
     private long boleto;
     private String pasajero;
     private double peso;
-    private Date fechaRegistro;
+    private String fechaRegistro;
     private String destino;
     private String color;
-    private double tamaño;
+    private String tamaño;
 
     public Equipaje(){
         super();
@@ -48,11 +48,11 @@ public class Equipaje {
         this.peso = peso;
     }
 
-    public Date getFechaRegistro() {
+    public String getFechaRegistro() {
         return fechaRegistro;
     }
 
-    public void setFechaRegistro(Date fechaRegistro) {
+    public void setFechaRegistro(String fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
 
@@ -72,11 +72,11 @@ public class Equipaje {
         this.color = color;
     }
 
-    public double getTamaño() {
+    public String getTamaño() {
         return tamaño;
     }
 
-    public void setTamaño(double tamaño) {
+    public void setTamaño(String tamaño) {
         this.tamaño = tamaño;
     }
 }

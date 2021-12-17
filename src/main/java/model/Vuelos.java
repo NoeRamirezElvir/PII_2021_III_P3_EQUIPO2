@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Vuelos {
     private long id;
-    private Date fecha;
+    private String fecha;
     private String lugarPartida;
     private String horaP;
     private String destino;
     private String aerolinea;
-    private String TiempoE;
+    private String tiempoE;
     private String descripcion;
 
     public Vuelos(){
@@ -24,11 +24,11 @@ public class Vuelos {
         this.id = id;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
@@ -65,11 +65,11 @@ public class Vuelos {
     }
 
     public String getTiempoE() {
-        return TiempoE;
+        return tiempoE;
     }
 
     public void setTiempoE(String tiempoE) {
-        TiempoE = tiempoE;
+        this.tiempoE = tiempoE;
     }
 
     public String getDescripcion() {

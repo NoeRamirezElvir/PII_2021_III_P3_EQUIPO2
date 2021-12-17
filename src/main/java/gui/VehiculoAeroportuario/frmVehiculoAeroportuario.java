@@ -49,7 +49,7 @@ public class frmVehiculoAeroportuario extends JFrame{
     private JScrollPane sclPanDatos;
     private JButton btnBuscarCodigo;
     DefaultTableModel modelo;
-    static final String URL = "http://192.168.0.15:8080/api/v1/vehiculosAeroportuarios";
+    static final String URL = "http://192.168.1.3:8080/api/v1/vehiculosAeroportuarios";
 
     public frmVehiculoAeroportuario() {
         iniciar();

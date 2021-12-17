@@ -1,8 +1,10 @@
 package gui.Principal;
 
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import gui.Aerolinea.frmAerolinea;
 import gui.Equipaje.frmEquipaje;
 import gui.LocalComercial.frmLocalComercial;
+import gui.Login.frmLogin;
 import gui.NuevoUsuario.frmNuevoUsuario;
 import gui.Persona.frmPersona;
 import gui.Pasajero.frmPasajero;
@@ -19,7 +21,6 @@ import java.awt.event.ActionListener;
 
 public class frmMenuPrincipal extends JFrame{
     private JLabel lblFondo;
-
     private JPanel jpaPrincipal;
 
     public frmMenuPrincipal() {
@@ -40,8 +41,8 @@ public class frmMenuPrincipal extends JFrame{
         lblTitulo.setBounds(330,50,600,80);
         lblFondo.add(lblTitulo);
         //-----
-        String nombre = "Admin";
-        JLabel lblBienvenida = new JLabel("Bienvenido: "+nombre);
+        frmLogin metodo  = new frmLogin();
+        JLabel lblBienvenida = new JLabel("Bienvenido(a): "+metodo.nombre);
         lblBienvenida.setForeground(new Color(255,255,255));
         lblBienvenida.setFont(new Font("Berlin Sans FB Demi",Font.BOLD,24));
         lblBienvenida.setBounds(40,10,400,80);
@@ -219,15 +220,24 @@ public class frmMenuPrincipal extends JFrame{
         btnUsuario.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frmNuevoUsuario frame = new frmNuevoUsuario();
-                frame.setVisible(true);
+                String evaluar = JOptionPane.showInputDialog(null,"Ingrese la contraseña:","Confirmar",JOptionPane.QUESTION_MESSAGE);
+                if (evaluar.equals("admin")){
+                    frmNuevoUsuario frame = new frmNuevoUsuario();
+                    frame.setVisible(true);
+                }else {
+                    JOptionPane.showMessageDialog(null,"Contraseña denegada","Error",JOptionPane.ERROR_MESSAGE);
+                }
             }
         });
         btnSalir.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.exit(0);
+                int confirmation = JOptionPane.showConfirmDialog(null,"Está seguro que desea Salir?","Confirmación",JOptionPane.YES_NO_OPTION,JOptionPane.INFORMATION_MESSAGE);
+                if (confirmation == JOptionPane.YES_OPTION){
+                    System.exit(0);
+                }
             }
         });
     }
+
 }

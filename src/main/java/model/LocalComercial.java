@@ -10,7 +10,7 @@ public class LocalComercial {
     private String tipoServicio;
     private long telefono;
     private String paginaWeb;
-    private Date fechaIngreso;
+    private String fechaIngreso;
 
     public LocalComercial(){
         super();
@@ -71,11 +71,11 @@ public class LocalComercial {
         this.paginaWeb = paginaWeb;
     }
 
-    public Date getFechaIngreso() {
+    public String getFechaIngreso() {
         return fechaIngreso;
     }
 
-    public void setFechaIngreso(Date fechaIngreso) {
+    public void setFechaIngreso(String fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 }
