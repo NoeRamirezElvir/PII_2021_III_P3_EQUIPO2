@@ -2,7 +2,8 @@ package model;
 
 public class Usuarios {
     private long id;
-    private String codigo;
+    private String empleado;
+    private String usuario;
     private String contraseña;
 
     public Usuarios(){
@@ -17,12 +18,20 @@ public class Usuarios {
         this.id = id;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public String getEmpleado() {
+        return empleado;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setEmpleado(String empleado) {
+        this.empleado = empleado;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getContraseña() {

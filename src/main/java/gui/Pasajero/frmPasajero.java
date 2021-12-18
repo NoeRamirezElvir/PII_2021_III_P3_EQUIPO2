@@ -52,8 +52,8 @@ public class frmPasajero extends JFrame{
     private JButton btnLimpiar;
     private JButton btnBuscarNombre;
     DefaultTableModel modelo;
-    static final String URL = "http://192.168.0.15:8080/api/v1/pasajeros";
-    static final String URL2 = "http://192.168.0.15:8080/api/v1/personas";
+    static final String URL = "http://192.168.1.3:8080/api/v1/pasajeros";
+    static final String URL2 = "http://192.168.1.3:8080/api/v1/personas";
 
 
     public frmPasajero(){

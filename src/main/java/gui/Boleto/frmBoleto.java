@@ -52,9 +52,9 @@ public class frmBoleto extends JFrame{
     private JLabel lblBoletos;
     private JButton btnBuscarCodigo;
     DefaultTableModel modelo;
-    static final String URL = "http://192.168.0.15:8080/api/v1/boletos";
-    static final String URL2 = "http://192.168.0.15:8080/api/v1/pasajeros";
-    static final String URL3 = "http://192.168.0.15:8080/api/v1/vuelos";
+    static final String URL = "http://192.168.1.3:8080/api/v1/boletos";
+    static final String URL2 = "http://192.168.1.3:8080/api/v1/pasajeros";
+    static final String URL3 = "http://192.168.1.3:8080/api/v1/vuelos";
 
     public frmBoleto() {
         iniciar();

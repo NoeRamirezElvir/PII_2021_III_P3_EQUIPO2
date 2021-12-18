@@ -54,8 +54,8 @@ public class frmAeronave extends JFrame{
     private JButton btnBuscarMo;
     DefaultTableModel modelo;
     String respuesta = "";
-    static final String URL2= "http://192.168.0.15:8080/api/v1/aerolineas";
-    static final String URL = "http://192.168.0.15:8080/api/v1/aeronaves";
+    static final String URL2= "http://192.168.1.3:8080/api/v1/aerolineas";
+    static final String URL = "http://192.168.1.3:8080/api/v1/aeronaves";
 
 
     public frmAeronave() {
@@ -124,7 +124,6 @@ public class frmAeronave extends JFrame{
                 }
                 finally{
                     client.close();
-
                 }
             }
         });

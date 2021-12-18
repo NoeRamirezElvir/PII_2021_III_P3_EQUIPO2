@@ -54,8 +54,8 @@ public class frmEmpleado extends JFrame {
     private JTable tblDatos;
     private JButton btnBuscarNombre;
     DefaultTableModel modelo;
-    static final String URL = "http://192.168.0.15:8080/api/v1/empleados";
-    static final String URL2 = "http://192.168.0.15:8080/api/v1/personas";
+    static final String URL = "http://192.168.1.3:8080/api/v1/empleados";
+    static final String URL2 = "http://192.168.1.3:8080/api/v1/personas";
 
 
     public frmEmpleado() {
@@ -277,7 +277,9 @@ public class frmEmpleado extends JFrame {
         setResizable(false);
         pack();
         setLocationRelativeTo(null);
-
+        //place holders
+        TextPrompt titulo = new TextPrompt("yyyy-MM-dd",txtFechaIngreso);
+        titulo.changeAlpha(0.75f);
         //Icono Ventana
         ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/ClienteEmpleado/iconoLeerCBOPersonas.png");
         setIconImage(imagen.getImage());
@@ -387,7 +389,7 @@ public class frmEmpleado extends JFrame {
         txtID.setText("0");
         txtCodigo.setText("");
         txtEmail.setText("");
-        txtFechaIngreso.setText("0000-00-00");
+        txtFechaIngreso.setText("");
         txtSueldo.setText("0");
     }
 
