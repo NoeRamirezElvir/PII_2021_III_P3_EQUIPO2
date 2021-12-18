@@ -312,8 +312,8 @@ public class frmVuelos extends JFrame{
         modelo.addColumn("Aerolínea");
         modelo.addColumn("Tiempo Estimado");
         modelo.addColumn("Descripción");
-        leerDatos();
         llenarCboAerolinea();
+        leerDatos();
     }
 
     private void llenarCboAerolinea() {

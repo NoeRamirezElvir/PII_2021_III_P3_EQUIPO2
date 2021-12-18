@@ -242,7 +242,6 @@ public class frmNuevoUsuario extends JFrame{
         setResizable(false);
         pack();
         setLocationRelativeTo(null);
-
         //Icono Ventana
         ImageIcon imagen = new ImageIcon("src/main/java/recursos/imagenes/loginPrincipal/iconoLogin.png");
         setIconImage(imagen.getImage());
@@ -270,8 +269,8 @@ public class frmNuevoUsuario extends JFrame{
         modelo.addColumn("Empleado");
         modelo.addColumn("Usuario");
         modelo.addColumn("Contraseña");
-        leerDatos();
         llenarCBOEmpleado();
+        leerDatos();
     }
 
     private void llenarCBOEmpleado() {
